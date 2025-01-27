@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+header,
+footer {
+  background-color: #212429;
+  color: white;
+}
+nav {
+  position: relative;
+  z-index: 10;
+}
+.shadow-box {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère autour du bloc */
+  border-radius: 8px; /* Coins arrondis pour un effet moderne */
+  padding: 20px; /* Espacement interne pour éviter que l'ombre touche le contenu */
+  background-color: #fff; /* Assurez-vous d'avoir un fond pour bien voir l'ombre */
+}
+
+.card {
+  background-color: #f9f9f9; /* Couleur de fond clair pour la carte */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre */
+  border-radius: 8px; /* Arrondit les coins */
+  border: 1px solid #e0e0e0; /* Optionnel : Ajoute une bordure discrète */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column; /* Permet d'empiler les éléments verticalement */
+  justify-content: center; /* Centre verticalement */
+  align-items: center; /* Centre horizontalement */
+  text-align: center; /* Centre le texte */
+}
+.btn-inverse {
+  background-color: white; /* Fond blanc */
+  color: #007bff; /* Texte bleu Bootstrap */
+  border: 1px solid #007bff; /* Bordure bleue */
+}
+
+.btn-inverse:hover {
+  background-color: #007bff; /* Fond bleu au survol */
+  color: white; /* Texte blanc au survol */
+}
+
+.col-md-6 {
+  font-size: 1.3em;
+}
+
+.arrow-links li {
+  list-style: none; /* Supprime les puces de liste par défaut */
+}
+
+.arrow-links li a {
+  position: relative; /* Nécessaire pour positionner la flèche */
+  padding-left: 20px; /* Ajoute de l'espace pour la flèche */
+}
+
+.arrow-links li a::before {
+  content: "›"; /* Flèche stylisée */
+  position: absolute; /* Place la flèche devant le texte */
+  left: 0; /* Position à gauche */
+  color: blue; /* Couleur bleue */
+  font-size: 16px; /* Taille de la flèche */
+  font-weight: bold; /* Donne un style gras à la flèche */
+}
+
+footer {
+  margin-top: auto; /* Pousse le footer en bas, même si la page est courte */
+}
+
+.footer-bottom {
+  background-color: black; /* Fond noir */
+  color: white; /* Texte blanc */
+  text-align: center; /* Centrer le texte */
+  padding: 10px 0; /* Espacement vertical */
+  width: 100%; /* Prend toute la largeur */
+}
